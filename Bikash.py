@@ -63,6 +63,17 @@ async def start_(client: Client, message: Message):
         ),
     )
     
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "💖 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭 𝐆𝐫𝐨𝐮𝐩 💖", url=f"https://t.me/WorldChattingFriendsWCF")
+                ]
+                
+           ]
+        ),
+    )
+    
     
 @bot.on_message(filters.command(["/start", f"start@{BOT_USERNAME}", "/alive", ".alive", "#Sangram", "Sangram", "sangram"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
