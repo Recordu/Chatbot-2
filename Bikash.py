@@ -17,6 +17,7 @@ OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "none")
 SUPPORT_GROUP = os.environ.get("SUPPORT_GROUP", "none")
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "none")
 BOT_NAME = os.environ.get("BOT_NAME", "none")
+SUDO_USERS = os.environ.get("SUDO_USERS", "none")
 
 bot = Client(
     "V_Chat_Bot" ,
@@ -69,7 +70,7 @@ async def start_(client: Client, message: Message):
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_IMAGE}",
-        caption=f"""𝑯𝒆𝒍𝒍𝒐🥀' 𝐈 𝐚𝐦 𝐀 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥𝐥 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐨𝐟 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦.\n\n🥀 𝐌𝐲 𝐧𝐚𝐦𝐞 𝐢𝐬 𝐌𝐈𝐒𝐀 !\n\n🥀𝐀𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐭𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) 🥀\n\n /chatbot - [on|off]""",
+        caption=f"""𝑯𝒆𝒍𝒍𝒐🥀' 𝐈 𝐚𝐦 𝐀 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥𝐥 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐨𝐟 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦.\n\n🥀 𝐌𝐲 𝐧𝐚𝐦𝐞 𝐢𝐬 {BOT_NAME} !\n\n🥀𝐀𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐭𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) 🥀\n\n /chatbot - [on|off]""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -100,9 +101,9 @@ async def chatbotofd(client, message):
     is_v = v.find_one({"chat_id": message.chat.id})
     if not is_v:
         v.insert_one({"chat_id": message.chat.id})
-        await message.reply_text(f"🥀 𝐌𝐈𝐒𝐀 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐃𝐢𝐬𝐚𝐛𝐥𝐞𝐝!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) ")
+        await message.reply_text(f"🥀 {BOT_NAME} 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐃𝐢𝐬𝐚𝐛𝐥𝐞𝐝!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) ")
     if is_v:
-        await message.reply_text(f"🥀 𝐌𝐈𝐒𝐀 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐢𝐬 𝐀𝐥𝐫𝐞𝐚𝐝𝐭 𝐃𝐢𝐬𝐚𝐛𝐥𝐞𝐝 🥀!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) ")
+        await message.reply_text(f"🥀 {BOT_NAME} 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐢𝐬 𝐀𝐥𝐫𝐞𝐚𝐝𝐭 𝐃𝐢𝐬𝐚𝐛𝐥𝐞𝐝 🥀!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) ")
     
 
 @bot.on_message(
@@ -122,10 +123,10 @@ async def chatboton(client, message):
             )
     is_v = v.find_one({"chat_id": message.chat.id})
     if not is_v:           
-        await message.reply_text(f"🥀 𝐌𝐈𝐒𝐀 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐈𝐬 𝐀𝐥𝐫𝐞𝐚𝐝𝐲𝐄𝐧𝐚𝐛𝐥𝐞𝐝!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) ")
+        await message.reply_text(f"🥀 {BOT_NAME} 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐈𝐬 𝐀𝐥𝐫𝐞𝐚𝐝𝐲𝐄𝐧𝐚𝐛𝐥𝐞𝐝!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) ")
     if is_v:
         v.delete_one({"chat_id": message.chat.id})
-        await message.reply_text(f"🥀 𝐌𝐈𝐒𝐀 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐢𝐬 𝐄𝐧𝐚𝐛𝐥𝐞𝐝!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) ")
+        await message.reply_text(f"🥀 {BOT_NAME} 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐢𝐬 𝐄𝐧𝐚𝐛𝐥𝐞𝐝!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) ")
     
 
 @bot.on_message(
