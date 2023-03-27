@@ -9,7 +9,7 @@ Click Below Picture To Open MISA ChatBot Owner Id...
 
 ### Deploy To Heroku
 
-[![Deploy+On+Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OpSahubot/Chatbot)
+[![Deploy+On+Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Recordu/Chatbot)
 
 
 ## Deploy
@@ -31,8 +31,8 @@ Click Below Picture To Open MISA ChatBot Owner Id...
 
 ## Telegram 🏪
 
-[![𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐆𝐫𝐨𝐮𝐩](https://img.shields.io/badge/Telegram-Group-brightgreen)](https://t.me/WorldChattingFriendsWCF) 
-[![𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐧𝐧𝐞𝐥](https://img.shields.io/badge/Telegram-Channel-brightgreen)](https://t.me/WCFnetwork)
+[![𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐆𝐫𝐨𝐮𝐩](https://img.shields.io/badge/Telegram-Group-brightgreen)](https://t.me/BhartiyaChattingGroup) 
+[![𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐧𝐧𝐞𝐥](https://img.shields.io/badge/Telegram-Channel-brightgreen)](https://t.me/lucibotz)
 
 
 
@@ -44,7 +44,7 @@ Click Below Picture To Open MISA ChatBot Owner Id...
 #### 🥺 Copy Pasters You Can Copy This Repo But Must Give Credits ...
 
 ### 🌷 Owner Of This Repository 🇮🇳
-[![𝐒𝐚𝐧𝐠𝐫𝐚𝐦](https://t.me/The_Sangram)
+[![LUCIFER](https://t.me/Lucifer_Is_Star)
 
 
 
