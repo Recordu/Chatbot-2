@@ -44,10 +44,10 @@ async def start_(client: Client, message: Message):
 𝑯𝒆𝒍𝒍𝒐🥀' 𝐈 𝐚𝐦 𝐀 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥𝐥 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐨𝐟 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦 .\n\n🥀 𝐌𝐲 𝐧𝐚𝐦𝐞 𝐢𝐬 {BOT_NAME} !\n\n /chatbot - [on|off] 𝐓𝐡𝐢𝐬 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐔𝐬𝐞 𝐎𝐧𝐥𝐲 𝐀𝐧𝐲 𝐆𝐫𝐨𝐮𝐩
 
 ┏━━━━━━━━━━━━━━━━━┓
-┣➤ 𝐎𝐰𝐧𝐞𝐫  ➪ [𝐂𝐥𝐢𝐜𝐤 𝐡𝐞𝐫𝐞](https://t.me/Lucifer_Is_Star)
-┣➤ 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 ➪ [Lucifer𝐍𝐞𝐭𝐰𝐨𝐫𝐤](https://t.me/lucibotz)
-┣➤ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ➪ [Lucifer 𝐎𝐏](https://t.me/BhartiyaChattingGroup)
-┣➤ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 ➪ [𝐋𝐞𝐠𝐞𝐧𝐝](https://t.me/Lucifer_Is_Star)
+┣➤ 𝐎𝐰𝐧𝐞𝐫  ➪ [𝐂𝐥𝐢𝐜𝐤 𝐡𝐞𝐫𝐞](https://t.me/Lucifer_Was_Bot)
+┣➤ 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 ➪ [Lucifer𝐍𝐞𝐭𝐰𝐨𝐫𝐤](https://t.me/lucifer_update1)
+┣➤ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ➪ [Lucifer 𝐎𝐏](https://t.me/Lucifer_Support1)
+┣➤ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 ➪ [𝐋𝐞𝐠𝐞𝐧𝐝](https://t.me/Lucifer_Was_Bot)
 ┗━━━━━━━━━━━━━━━━━┛
 
 ❣️ 𝐉𝐮𝐬𝐭 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐀𝐧𝐝
@@ -75,7 +75,7 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        " 💝 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐭 𝐆𝐫𝐨𝐮𝐩 💝", url=f"https://t.me/BhartiyaChattingGroup")
+                        " 💝 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐭 𝐆𝐫𝐨𝐮𝐩 💝", url=f"https://t.me/Lucifer_Support1")
                 ]
             ]
         ),
